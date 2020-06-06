@@ -26,6 +26,21 @@
     .color-2 {
         background-color: rgb(200, 200, 255);
     }
+    @keyframes animation-test {
+        0% {
+            left: 0px;
+            background-color: rgb(200, 255, 200);
+        }
+        100% {
+            left: 300px;
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    .animation {
+        position: absolute;
+        animation: animation-test;
+        animation-duration: 3s;
+    }
 </style>
 </head>
 <body>
@@ -35,5 +50,6 @@
     <!-- これはコメントです -->
     <p class="box color-1">こんにちは</p>
     <p class="box color-2">さようなら</p>
+    <p class="box color-1 animation">アニメーションのテストです。（これは課題とは関係ありません）</p>
 </body>
 </html>
